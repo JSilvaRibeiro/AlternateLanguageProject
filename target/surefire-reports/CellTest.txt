@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: CellTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.28 sec <<< FAILURE!
+CellTest.testTransformPlatformOs()  Time elapsed: 0.098 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <Platform OS> but was: <>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1141)
+	at CellTest.testTransformPlatformOs(CellTest.java:39)
+
+CellTest.testToString()  Time elapsed: 0 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <OEM: OEM, Model: Model, Launch Announced: 2000, Launch Status: Discontinued, Body Dimensions: Dimensions, Body Weight: 90.0, Body SIM: Mini-SIM, Display Type: Type, Display Size: 5.0, Display Resolution: Resolution, Features Sensors: Features, Platform OS: Platform OS> but was: <OEM: OEM, Model: Model, Launch Announced: 2000, Launch Status: Discontinued, Body Dimensions: Dimensions, Body Weight: 90.0, Body SIM: Mini-SIM, Display Type: Type, Display Size: 5.0, Display Resolution: Resolution, Features Sensors: Features, Platform OS: Platform OS: V1>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1141)
+	at CellTest.testToString(CellTest.java:46)
+

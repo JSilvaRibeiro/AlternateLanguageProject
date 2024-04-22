@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="6" failures="2" name="CellTest" time="0.19" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="17.0.5+8-jvmci-22.3-b08"/>
+    <property name="sun.boot.library.path" value="/nix/store/gpxl5qgg8kicmcvivwmybwjlpf7wh20l-graalvm17-ce-22.3.0/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/runner/AltLanguageProject2"/>
+    <property name="java.vm.vendor" value="GraalVM Community"/>
+    <property name="java.vendor.url" value="https://www.graalvm.org/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/runner/AltLanguageProject2"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="17.0.5+8-jvmci-22.3-b08"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="jdk.internal.vm.ci.enabled" value="true"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/nix/store/6z9ag3ihc8mq2hzsw48lhbznvzny65nz-apache-maven-3.8.6/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/nix/store/a4pff549sk2idnkpzk5nsfps3mdkdnvm-cups-2.4.2-lib/lib:/nix/store/72mqxxhh3cy5yifh92wh2yb8cl2hikyy-cairo-1.16.0/lib:/nix/store/2k366jrbsra97gjfxwvrhvixjfxdach5-glib-2.74.1/lib:/nix/store/2j2znigd8ak37rlwh9khz0ry3clqlw1l-gtk+3-3.24.34/lib:/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/nix/store/6z9ag3ihc8mq2hzsw48lhbznvzny65nz-apache-maven-3.8.6/maven/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.5.0-1018-gcp"/>
+    <property name="library.jansi.path" value="/nix/store/6z9ag3ihc8mq2hzsw48lhbznvzny65nz-apache-maven-3.8.6/maven/lib/jansi-native"/>
+    <property name="user.home" value="/home/runner"/>
+    <property name="user.timezone" value="GMT"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="user.name" value="runner"/>
+    <property name="java.class.path" value="/nix/store/6z9ag3ihc8mq2hzsw48lhbznvzny65nz-apache-maven-3.8.6/maven/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="java.home" value="/nix/store/gpxl5qgg8kicmcvivwmybwjlpf7wh20l-graalvm17-ce-22.3.0"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="17.0.5"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="GraalVM Community"/>
+    <property name="sun.stderr.encoding" value="UTF-8"/>
+    <property name="maven.home" value="/nix/store/6z9ag3ihc8mq2hzsw48lhbznvzny65nz-apache-maven-3.8.6/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2022-10-18"/>
+    <property name="java.vendor.url.bug" value="https://github.com/oracle/graal/issues"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="GraalVM CE 22.3.0"/>
+    <property name="sun.stdout.encoding" value="UTF-8"/>
+  </properties>
+  <testcase classname="CellTest" name="CellTest.testTransformDisplaySize" time="0.089"/>
+  <testcase classname="CellTest" name="CellTest.testTransformPlatformOs" time="0.098">
+    <failure message="expected: &lt;Platform OS&gt; but was: &lt;&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;Platform OS&gt; but was: &lt;&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1141)
+	at CellTest.testTransformPlatformOs(CellTest.java:39)
+</failure>
+  </testcase>
+  <testcase classname="CellTest" name="CellTest.testToString" time="0">
+    <failure message="expected: &lt;OEM: OEM, Model: Model, Launch Announced: 2000, Launch Status: Discontinued, Body Dimensions: Dimensions, Body Weight: 90.0, Body SIM: Mini-SIM, Display Type: Type, Display Size: 5.0, Display Resolution: Resolution, Features Sensors: Features, Platform OS: Platform OS&gt; but was: &lt;OEM: OEM, Model: Model, Launch Announced: 2000, Launch Status: Discontinued, Body Dimensions: Dimensions, Body Weight: 90.0, Body SIM: Mini-SIM, Display Type: Type, Display Size: 5.0, Display Resolution: Resolution, Features Sensors: Features, Platform OS: Platform OS: V1&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;OEM: OEM, Model: Model, Launch Announced: 2000, Launch Status: Discontinued, Body Dimensions: Dimensions, Body Weight: 90.0, Body SIM: Mini-SIM, Display Type: Type, Display Size: 5.0, Display Resolution: Resolution, Features Sensors: Features, Platform OS: Platform OS&gt; but was: &lt;OEM: OEM, Model: Model, Launch Announced: 2000, Launch Status: Discontinued, Body Dimensions: Dimensions, Body Weight: 90.0, Body SIM: Mini-SIM, Display Type: Type, Display Size: 5.0, Display Resolution: Resolution, Features Sensors: Features, Platform OS: Platform OS: V1&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1141)
+	at CellTest.testToString(CellTest.java:46)
+</failure>
+  </testcase>
+  <testcase classname="CellTest" name="CellTest.testTransformBodyWeight" time="0"/>
+  <testcase classname="CellTest" name="CellTest.testTransformBodySim" time="0.002"/>
+  <testcase classname="CellTest" name="CellTest.testTransformLaunchYear" time="0.001"/>
+</testsuite>
